@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacta amb Saborejat</title>
+    <meta name="description" content="El concurs de cuina de la millor comarca de Catalunya per descobrir plats típics de la regió a través de les receptes dels nostres veïns i veïnes.">
+    <meta name="keywords" content="concurs, cuina, menjar, alimentació, comarca, Catalunya, gastronomia">
+    <link rel="canonical" href="https://pac2-eineshtmlcss2-obaron.netlify.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contacta amb Saborejat">
+    <meta property="og:description" content="El concurs de cuina de la millor comarca de Catalunya per descobrir plats típics de la regió a través de les receptes dels nostres veïns i veïnes.">
+    <meta property="og:image" content="https://pac2-eineshtmlcss2-obaron.netlify.app/">
+    <meta property="og:url" content="https://pac2-eineshtmlcss2-obaron.netlify.app/">
+    <meta property="og:site_name" content="Participants de Saborejat">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contacta amb Saborejat">
+    <meta name="twitter:description" content="El concurs de cuina de la millor comarca de Catalunya per descobrir plats típics de la regió a través de les receptes dels nostres veïns i veïnes.">
+    <meta name="twitter:image" content="https://pac2-eineshtmlcss2-obaron.netlify.app/">
+    <link rel="icon" type="image/png" href="assets/images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="assets/styles/main.css">
+</head>
+<body>
+    <section class="container">
+        <header class="container__header">
+            <picture class="container__logo">
+                <source srcset="./assets/images/logo-web.png" type="image/png" />
+                <img src="./assets/images/logo-web.png" alt="Logo del concurs Saborejat" class="container__logo-img" />
+            </picture>
+            <nav class="container__nav">
+                <a href="./index.html" class="container__nav-link">Inici</a>
+                <a href="./participants.html" class="container__nav-link">Participants</a>
+                <a href="./concurs.html" class="container__nav-link">Sobre el concurs</a>
+                <a href="./contacte.html" class="container__nav-link">Contacte</a>
+            </nav>
+        </header>
+    </section>
+    <h1>Contacta amb Saborejat</h1>
+    <section class="container-form">
+        
+        <form name="contact" method="POST" data-netlify="true">
+            <h2>Formulari de contacte</h2>
+            <input type="hidden" name="form-name" value="contact">
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Correu electrònic:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Missatge:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+
+        <form name="cooking-contest" method="POST" data-netlify="true">
+            <h2>Formulari d'inscripció</h2>
+            <input type="hidden" name="form-name" value="cooking-contest" />
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correu electrònic:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="recipe">Nom de la Recepta:</label>
+            <input type="text" id="recipe" name="recipe" required>
+
+            <label for="description">Descripció de la Recepta:</label>
+            <textarea id="description" name="description" required></textarea>
+
+            <button type="submit">Enviar inscripció</button>
+        </form>
+    </section>
+
+    <h1>Ubicació del concurs</h1>
+    <section class="mapa">
+        <iframe class="map-iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Mapa d'ubicació del concurs" src="https://www.openstreetmap.org/export/embed.html?bbox=-2.5520%2C51.1602%2C-2.5397%2C51.1672&amp;layer=mapnik&amp;marker=51.1637%2C-2.5458" style="border: 1px solid black;"></iframe>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__logo">
+          <picture>
+            <source srcset="./assets/images/logo-footer.png" type="image/png" />
+            <img src="./assets/images/logo-footer.png" alt="Logo del concurs Saborejat" class="footer__logo-img" />
+          </picture>
+        </div>
+        <nav class="container__nav">
+          <a href="./index.html" class="container__nav-link">Inici</a>
+          <a href="./participants.html" class="container__nav-link">Participants</a>
+          <a href="./concurs.html" class="container__nav-link">Concurs</a>
+          <a href="./contacte.html" class="container__nav-link">Contacte</a>
+        </nav>
+        <div class="footer__social-icons">
+          <div class="footer__social-icon">
+              <a href="https://www.facebook.com/" target="_blank">
+                  <img src="./assets/images/facebook.png" alt="Logo de Facebook">
+              </a>
+          </div>
+          <div class="footer__social-icon">
+              <a href="https://www.twitter.com/" target="_blank">
+                  <img src="./assets/images/twitter.png" alt="Logo de Twitter">
+              </a>
+          </div>
+          <div class="footer__social-icon">
+              <a href="https://www.instagram.com/" target="_blank">
+                  <img src="./assets/images/instagram.png" alt="Logo de Instagram">
+              </a>
+          </div>
+      </div>      
+      </footer>
+      <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+  </body>
+  </html>

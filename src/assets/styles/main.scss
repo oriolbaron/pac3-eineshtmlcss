@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+
 /**
  * Use this file to import partials.
  * Do not include SCSS code in this file.
@@ -6,7 +9,6 @@
 /**
  * Import variables
  */
-
 @import "variables";
 
 /**
@@ -28,3 +30,7 @@
 /**
  * Do NOT include anything else in this file!
  */
+
+@import '../../../node_modules/bootstrap/scss/bootstrap-grid.scss';
+
+@tailwind utilities;
